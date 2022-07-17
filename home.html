@@ -1,0 +1,480 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="./js/main.js"></script>
+    <title>Catálogos | APPC</title>
+</head>
+
+<body>
+    <!--logo principal e fotos logo-->
+    <header class="menu-principal">
+        <main>
+            <div class="header-1">
+                <div class="logo">
+                    <img src="imagens/logo.png">
+                </div>
+                <!-- <div class="Redes-sociais">
+                    <ul>
+                        <li><a href="https://pt-br.facebook.com/autopecaspecicero/" target="_blank"><img
+                                    src="imagens/face.png"></a></li>
+
+                        <li><a href="https://br.linkedin.com/company/autopecaspecicero" target="_blank"><img
+                                    src="imagens/linkedin.png"></a></li>
+
+                        <li><a href="https://twitter.com/auto_pecicero" target="_blank"><img src="imagens/tw.png"></a>
+                        </li>
+
+                        <li><a href="https://www.instagram.com/autopecaspecicero/?hl=pt-br" target="_blank"><img
+                                    src="imagens/insta.png"></a></li>
+
+                    </ul>
+                </div> -->
+            </div>
+        </main>
+    </header>
+    <!--Menu principal-->
+
+    <main class="col-100 menu-url">
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <h5>
+                        <li><a href="home.html">Home</a></li>
+                        <!--<li><A href="motos.html">Motos</A></li> -->
+                        <li><a href="ftp://192.168.0.71/Catalogos/" target="_blank">Portal de Catálogos</a></li>
+                        <li><a href="https://www.pecicero.com.br/contato/" target="_blank">Contato</a></li>
+
+                    </h5>
+                </ul>
+            </div>
+
+            <nav class="busca">
+                <div class="jumbotron"></div>
+                <div class="input-group" id="formulario">
+                    <input type="text" name="" class="form-control" id="pesquisar" placeholder="search" list="mySuggestion" autocomplete="disable">
+                    <datalist id="mySuggestion">
+              
+                           
+                       
+                        <option value="3RHO"></option>
+                        <option value="ANROI"></option>
+                        <option value="APEX"></option>
+                        <option value="APLIC RESOLIT"> </option>
+                        <option value="ARCA RETENTORES"> </option>
+                        <option value="ATAG"></option>
+                        <option value="BASTOS"></option>
+                        <option value="BAUEN"></option>
+                        <option value="BEL AR"> </option>
+                        <option value="BIBI"></option>
+                        <option value="CIPEC"></option>
+                        <option value="CONTINENTAL"></option>
+                        <option value="DAYCO"></option>
+                        <option value="DNI"></option>
+                        <option value="DPL"></option>
+                        <option value="EATON"></option>
+                        <option value="FANIA"></option>
+                        <option value="FARJ"></option>
+                        <option value="FRASLE"></option>
+                        <option value="FREMAX"></option>
+                        <option value="GATES CORREIAS"> </option>
+                        <option value="GAUSS"></option>
+                        <option value="GLOBO"></option>
+                        <option value="HIPPER FREIOS"> </option>
+                        <option value="IMA"></option>
+                        <option value="IRB"></option>
+                        <option value="MAGNETI MARELLI"> </option>
+                        <option value="MAHLE"></option>
+                        <option value="MASTRA"></option>
+                        <option value="MAXGEAR"></option>
+                        <option value="MG MANGUEIRA"> </option>
+                        <option value="MOBENSANI"></option>
+                        <option value="MANROE AMORTECEDORES"> </option>
+                        <option value="MANROE AXIOS"> </option>
+                        <option value="MTE THOMSON"> </option>
+                        <option value="NAKATA"></option>
+                        <option value="NGK"></option>
+                        <option value="PERFECT"></option>
+                        <option value="POLO"></option>
+                        <option value="REPARADOR"></option>
+                        <option value="RIOSULENSE"></option>
+                        <option value="SABÓ"></option>
+                        <option value="SPALL"></option>
+                        <option value="SPICER"></option>
+                        <option value="STAHL"></option>
+                        <option value="TARANTO"></option>
+                        <option value="TECFIL"></option>
+                        <option value="VALCLEI"></option>
+                        <option value="VALEO"></option>
+                        <option value="VANNUCCI"></option>
+                        <option value="VIEMAR"></option>
+                        <option value="VISCONDE"></option>
+                        <option value="WEGA"></option>
+                        <option value="WILLTEC"></option>
+                        <option value="ZF"></option>
+                        <option value="ZM"></option>
+
+                    </datalist>
+
+                    <button id="myBtn" onclick="redirecionar()">Buscar</button>
+
+                    <script>
+                        var input = document.getElementById("pesquisar");
+                        input.addEventListener("keyup", function(event) {
+                            if (event.keyCode === 13) {
+                                event.preventDefault();
+                                document.getElementById("myBtn").click();
+                            }
+                        });
+                    </script>
+
+
+
+                </div>
+
+
+
+            </nav>
+
+
+
+            <ul id="lista"></ul>
+
+
+
+
+        </div>
+
+        <div class="container">
+            <div class="row" id="catalogos"></div>
+        </div>
+
+    </main>
+    <!-- Conteudo slide fotos
+    <div class="col-100">
+        <div class="slider-principal">
+            <img src="./imagens/car2.jpg" />
+            <img src="./imagens/car2.jpg" />
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>-->
+
+    <!-- <div class="container">
+        <div class="section"></div>
+        <div class="section"></div>
+    </div> -->
+    <div class="imgCatalogo">
+        <img src="imagens/Ambos.png" />
+    </div>
+    <div class="col-100">
+        <div class="content texto-destaque">
+            <!-- Código catalogo parte do corpo -->
+            <h2>Click na imagem do catálogo desejado.</h2>
+
+            <div class="col-3">
+                <a href="https://www.3rho.com.br/3-RHO_catalogo.pdf" target="_blank"> <img src="catalogo_img/3rho.png">
+                </a>
+                <h2>3RHO</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://c123.com.br/anroi/" target="_blank"> <img src="catalogo_img/anroi.jpg"> </a>
+                <h2>ANROI</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://c123.com.br/apex/" target="_blank"><img src="./catalogo_img/apex.png"></a>
+                <h2>APEX</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://c123.com.br/aplic/" target="_blank"><img src="./catalogo_img/aplic_resolit.png"></a>
+                <h2>APLIC RESOLIT</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://baixecatalogo.com.br/catalogo/arca-retentores" target="_blank"><img src="./catalogo_img/arca_retentores.png"></a>
+                <h2>ARCA RETENTORES</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://c123.com.br/atag/cadini.asp" target="_blank"><img src="./catalogo_img/atag.png"></a>
+                <h2>ATAG</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://www.c123.com.br/bastos/" target="_blank"><img src="./catalogo_img/bastos_juntas.png"></a>
+                <h2>BASTOS</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://www.c123.com.br/bauen/res.asp?l1=93" target="_blank"><img src="./catalogo_img/bauen.png"></a>
+                <h2>BAUEN</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://c123.com.br/bel-ar/" target="_blank"><img src="./catalogo_img/bel_ar.png"></a>
+                <h2>BEL AR</h2>
+            </div>
+
+            <div class="col-3">
+                <img src="./catalogo_img/bibi.png">
+                <h2>BIBI</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://www.c123.com.br/cipec/res.asp?idm=&lb=1" target="_blank"><img src="./catalogo_img/cipec.png"></a>
+                <h2>CIPEC</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://aam-southamerica.contitech.de/pages/vehicle-search/vehicle-search_pt.html" target="_blank"><img src="./catalogo_img/continental.png"></a>
+                <h2>CONTINENTAL</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://www.daycogarage.com/catalogue/pt-pt" target="_blank"><img src="./catalogo_img/dayco.png"></a>
+                <h2>DAYCO</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://www.dni.com.br/catalog/downloads/files/Catalogo-DNI.pdf" target="_blank"><img src="./catalogo_img/dni.png"></a>
+                <h2>DNI</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://www.c123.com.br/dpl/res.asp?l1=766&l=2" target="_blank"><img src="./catalogo_img/dpl.png"></a>
+                <h2>DPL</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://www.c123.com.br/eaton/cadini.asp?l=1" target="_blank"><img src="./catalogo_img/eaton.png"></a>
+                <h2>EATON</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://c123.com.br/fania/" target="_blank"><img src="./catalogo_img/fania.png"></a>
+                <h2>FANIA</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://c123.com.br/farj/" target="_blank"><img src="./catalogo_img/farj.png"></a>
+                <h2>FARJ</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://catalogo.fras-le.com/FRAS-LE/" target="_blank"><img src="./catalogo_img/frasle.png"></a>
+                <h2>FRASLE</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://www.fremax.com.br/br/catalogo/disco-e-tambor-de-freio/" target="_blank"><img src="./catalogo_img/fremax.png"></a>
+                <h2>FREMAX</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://www.gatesbrasil.com.br/catalogos.php" target="_blank"><img src="./catalogo_img/gates-correias.png"></a>
+                <h2>GATES CORREIAS</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://www.gauss.com.br/" target="_blank"><img src="./catalogo_img/gauss.png"></a>
+                <h2>GAUSS</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://globopecas.com.br/wp-content/uploads/2019/02/Cat%C3%A1logo-2019.pdf" target="_blank"><img src="./catalogo_img/globo.png"></a>
+                <h2>GLOBO</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://www.hipperfreios.com.br/catalogo/catalogo-hipper-freios.pdf" target="_blank"><img src="./catalogo_img/hipper_freios.png"></a>
+                <h2>HIPPER FREIOS</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://ima.ind.br/catalogos/" target="_blank"><img src="./catalogo_img/ima.png"></a>
+                <h2>IMA</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://irbauto.com.br/" target="_blank"><img src="./catalogo_img/irb.png"></a>
+                <h2>IRB</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="www.mmcofap.com.br/catalogo-eletronico-introducao.aspx" target="_blank"><img src="./catalogo_img/magneti_marelli.png"></a>
+                <h2>MAGNETI MARELLI</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://catalog.mahle-aftermarket.com/br/?home" target="_blank"><img src="./catalogo_img/mahle.png"></a>
+                <h2>MAHLE</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://www.mastra.com.br/catalogo" target="_blank"><img src="./catalogo_img/mastra.png"></a>
+                <h2>MASTRA</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://maxgear.com.br/category/catalogo-e-dicas/" target="_blank"><img src="./catalogo_img/maxgear.png"></a>
+                <h2>MAXGEAR</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://mgmangueiras.com.br/produtos" target="_blank"><img src="./catalogo_img/McMangueira.png"></a>
+                <h2>MC MANGUEIRA</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://www.mobensani.com.br/uploads/catalogos/Cat.%20Mobensani%202018_AF_WEB.pdf" target="_blank"><img src="./catalogo_img/mobensani.png"></a>
+                <h2>MOBENSANI</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://c123.com.br/MonroeAmortecedores/" target="_blank"><img src="./catalogo_img/monroe_amortecedores.png"></a>
+                <h2>MANROE AMORTECEDORES</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://c123.com.br/MonroeAxios/" target="_blank"><img src="./catalogo_img/monroe_axios.png"></a>
+                <h2>MANROE AXIOS</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://cate.mte-thomson.com.br" target="_blank"><img src="./catalogo_img/mte-thomson.png"></a>
+                <h2>MTE THOMSON</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://www.catalogonakata.com.br/" target="_blank"><img src="./catalogo_img/nakata.png"></a>
+                <h2>NAKATA</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://www.ngkntk.com.br/automotivo/tabela-de-aplicacao/" target="_blank"><img src="./catalogo_img/ngk.png"></a>
+                <h2>NGK</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://www.perfectautomotive.com/novo/pcatalogo?lg=" target="_blank"><img src="./catalogo_img/perfect.png"></a>
+                <h2>PERFECT</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="www.c123.com.br/polo/" target="_blank"><img src="./catalogo_img/polo.png"></a>
+                <h2>POLO</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://reparador.fiat.com.br/" target="_blank"><img src="./catalogo_img/reparador.png"></a>
+                <h2>REPARADOR</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://catalogo.riosulense.com.br/pt/home/" target="_blank"><img src="./catalogo_img/riosulense.png"></a>
+                <h2>RIOSULENSE</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://www.sabo.com.br/catalogo-web/" target="_blank"><img src="./catalogo_img/sabo.png"></a>
+                <h2>SABÓ</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://www.spaal.com.br/catalogos/?viewType=Print&viewClass=Print" target="_blank"><img src="./catalogo_img/spall.png"></a>
+                <h2>SPALL</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://baixecatalogo.com.br/catalogo/spicer-brasil" target="_blank"><img src="./catalogo_img/spicer.png"></a>
+                <h2>SPICER</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://www.stahl.com.br/br/produtos/garfos-duplos" target="_blank"><img src="./catalogo_img/stahl.png"></a>
+                <h2>STAHL</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://c123.com.br/taranto/" target="_blank"><img src="./catalogo_img/taranto.png"></a>
+                <h2>TARANTO</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://tecfil-catalago.gruposofape.com.br/CatalogoTecfil/index.xhtml" target="_blank"><img src="./catalogo_img/tecfil.png"></a>
+                <h2>TECFIL</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://www.valclei.com.br/assets/admin/uploads/Catalogo_Valclei_2016_WEB.pdf" target="_blank"><img src="./catalogo_img/valclei.png"></a>
+                <h2>VALCLEI</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://www.valeoservice.com.br/pt-br/catalogs" target="_blank"><img src="./catalogo_img/valeo.png"></a>
+                <h2>VALEO</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://c123.com.br/Vannucci/" target="_blank"><img src="./catalogo_img/Vannucci.png"></a>
+                <h2>VANNUCCI</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://viemar.com/viemar/newcat/index.jsp" target="_blank"><img src="./catalogo_img/viemar.png"></a>
+                <h2>VIEMAR</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://radiadoresvisconde.com.br/catalogo/" target="_blank"><img src="./catalogo_img/visconde.png"></a>
+                <h2>VISCONDE</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://wegamotors.com/consulta-on-line/" target="_blank"><img src="./catalogo_img/wega.png"></a>
+                <h2>WEGA</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="http://www.c123.com.br/willtec/" target="_blank"><img src="./catalogo_img/willtec.png"></a>
+                <h2>WILLTEC</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://webcat.zf.com/?SPR=15" target="_blank"><img src="./catalogo_img/zf.png"></a>
+                <h2>ZF</h2>
+            </div>
+
+            <div class="col-3">
+                <a href="https://www.zm.com.br/catalogo" target="_blank"><img src="./catalogo_img/zm.png"></a>
+                <h2>ZM</h2>
+            </div>
+
+        </div>
+    </div>
+    </script>
+
+    <footer>
+        <div class="col-100 footer">
+            <div class="content">
+                <div class="col-4">
+                    <h4> Desenvolvido por Tiago Carvalho</h4>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+
+</html>
